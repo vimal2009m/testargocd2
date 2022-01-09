@@ -6,7 +6,7 @@ metadata:
   name: nginx-argoapp
   namespace: default
 spec:
-  replicas: 2
+  replicas: 10
   selector:
     matchLabels:
       app: nginx-argoapp
