@@ -16,5 +16,5 @@ spec:
         app: nginx-argoapp
     spec:
       containers:
-      - image: nginx
+      - image: nginx:1.19 
         name: nginx-con
