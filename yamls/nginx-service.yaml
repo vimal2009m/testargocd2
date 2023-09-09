@@ -2,14 +2,14 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: nginx-argoapp
-  name: nginx-argoapp
-  namespace: default
+    app: nginx-app
+  name: nginx-app
+  namespace: prod3
 spec:
   ports:
   - port: 80
     protocol: TCP
     targetPort: 80
   selector:
-    app: nginx-argoapp
+    app: nginx-app
   type: LoadBalancer
